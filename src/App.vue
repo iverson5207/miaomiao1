@@ -1,23 +1,11 @@
+// keep-alive内置缓存，由于每次切换的时候都会重新去渲染一遍，影响性能。
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
-  </div>
+  <keep-alive>
+      <router-view/>
+  </keep-alive>
 </template>
+sc
 
-<script>
-export default {
-  name: 'App'
-}
-</script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+
+
